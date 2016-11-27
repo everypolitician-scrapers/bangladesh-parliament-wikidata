@@ -1,5 +1,5 @@
-require 'wikidata/fetcher'
 require 'everypolitician'
+require 'wikidata/fetcher'
 
 existing = EveryPolitician::Index.new.country("Bangladesh").lower_house.popolo.persons.map(&:wikidata).compact
 
